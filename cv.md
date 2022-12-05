@@ -1,11 +1,19 @@
-# Yulia Ivanova
+# Name and surname: Yulia Ivanova
 
-## contacts - blissdery@gmail.com, @jcoatlicue
+## Contacts for communication: blissdery@gmail.com, @jcoatlicue
 
-## my goal is to become a frontend developer. there is no work experience, there are only two university courses on the basics of html, css and python developer.
-## my strengths are multitasking, perseverance, and a great desire to master new technologies.
-## code examples can be found on my github page - @bagrationi, all repositories are public.
+## Brief information about myself: my goal is to become a frontend developer. 
+## My strengths are multitasking, perseverance, and a great desire to master new technologies.
 
-## my hard skills are html, css, js, python
-## education - USPTU (technosphere safety, engineering economics)
-## English B2
+## Work experience: there is no work experience, there are only two university courses and pt-projects on github.
+
+## 
+
+## Code Examples: code examples can be found on my github page - @jbagration, all repositories are public.
+
+## Skills: html, css, js, python
+
+## Education: USPTU (technosphere safety, engineering economics). 
+## Completed courses: html & css basics (by USPTU); Python developer (by USPTU)
+
+## English: B2
