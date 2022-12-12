@@ -22,6 +22,9 @@ var countBits = function(n) {
    return result;
 };
 
+# Projects
+## Premium car rental
+## https://jbagration.github.io/cars-hw/
 
 # Skills
 ## Web-development: HTML5, CSS3, JavaScript
