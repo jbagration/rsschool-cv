@@ -289,11 +289,6 @@ img{
     fill: var(--first-color);
 }
 
-.home__rsblob{
-    width: 150px;
-    fill: var(--first-color-lighter);
-}
-
 .home__blob-img{
     width: 200px;
 }
