@@ -92,17 +92,23 @@ modalCloses.forEach((modalClose) =>{
 })
 
 /*portfolio swiper*/
-let swiper = new Swiper(".portfolio-container",{
-  cssMode: true,
-  loop: true,
-  navigation:{
+let swiperProjects = new Swiper(".portfolio__container", {
+    loop: true,
+    spaceBetweeb: 24,
+  
+  navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  pagination:{
+  pagination: {
     el: ".swiper-pagination",
-    clickable: true,
   },
+    breakpoints: {
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: -20,
+        },
+    },
 });
 
 /*scroll sections active link*/
