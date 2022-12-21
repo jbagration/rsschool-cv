@@ -617,7 +617,6 @@ body.dark-theme{
     transform: translateX(.25rem);
 }
 
-
 /*swiper class*/
 .projects__container .swiper-button-prev::after,
 .projects__container .swiper-button-next::after{
