@@ -1111,7 +1111,7 @@ body.dark-theme{
     }
 
     .skills__container{
-        column-gap: 10rem;
+        column-gap: 15rem;
     }
     .skills__title{
         margin-bottom: 3rem;
@@ -1145,7 +1145,7 @@ body.dark-theme{
     }
 
     .services__container{
-        grid-template-columns: repeat(3, max-content);
+        grid-template-columns: repeat(2, max-content);
     }
     .services__card{
         width: 245px;
