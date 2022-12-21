@@ -5,455 +5,427 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--unicons-->
-    <link rel="icon" href="assets/favicon.ico">
+    <!---------unicons--------->
+    <link rel="icon" href="assets/fav.ico">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
-    <!--swiper css-->
+    <!---------swiper css--------->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <!--css-->
+    <!---------css--------->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>cv</title>
 </head>
-<body>
-    <!--header-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Yulia</a>
-            <div class="nav__menu" id="nav-menu">
+    <body>
+        <!---------header--------->
+        <header class="header" id="header">
+            <nav class="nav container">
+            <a href="#" class="nav__logo">
+            Yulia
+            </a>
+
+                <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>  
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact
-                        </a>
-                    </li>
+
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class="uil uil-estate nav__icon"></i> Home
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="uil uil-file-alt nav__icon"></i> Skills
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#qualification" class="nav__link">
+                        <i class="uil uil-book-open"></i> Qualification
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">
+                        <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">
+                        <i class="uil uil-scenery nav__icon"></i>  Projects
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                        <i class="uil uil-message nav__icon"></i> Contact
+                    </a>
+                </li>
                 </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
-                <!--theme change button-->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-                <div class="nav__toggle" id="nav-toggle">
+
+                    <!---------close button--------->
+                    <div class="nav__close" id="nav-close">
+                    <i class="uil uil-times"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+                    <!---------theme change button--------->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <!---------toggle button--------->
+                    <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <!--main-->
-    <main class="main">
-        <!--home-->
+            </nav>
+        </header>
+        <!---------main--------->
+        <main class="main">
+        <!---------home--------->
         <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/julia-ivanova-77379625a/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
+        <div class="home__container container grid section__border">
+            <div class="home__data grid">
+                <h1 class="home__title">
+                    Hi, i am Yulia Ivanova <br>
+                    Frontend developer <br>
+                </h1>
 
-                        <a href="https://t.me/jcoatlicue" target="_blank" class="home__social-icon">
-                            <i class="uil uil-telegram-alt"></i>
-                        </a>
+                <div class="home__blob grid">
+                    <div class="home__perfil">
+                        <img src="assets/img/perfil.jpg" alt="home perfil">
+                    </div>
 
-                        <a href="https://github.com/jbagration" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image class="home__blob-img" x="-1" href="assets/img/image.jpg"/>
-                            </g>
-                        </svg>                        
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, i'm Yulia Ivanova</h1>
-                        <h3 class="home__subtitle">Frontend developer</h3>
-                        <p class="home__description">Studying at rsschool in order to become a highly qualified frontend developer in the future</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
                 </div>
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-namee">Scroll down</span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+
+                <ul class="home__social">
+                    <a href="https://www.linkedin.com/in/julia-ivanova-77379625a/" target="_blank" class="home__social-link">
+                        <i class="uil uil-linkedin-alt"></i>
                     </a>
-                </div>
+
+                    <a href="https://t.me/jcoatlicue" target="_blank" class="home__social-link">
+                        <i class="uil uil-telegram-alt"></i>
+                    </a>
+
+                    <a href="https://github.com/jbagration" target="_blank" class="home__social-link">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </ul>
             </div>
-        </section>
-        <!--about-->
-        <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My indtroduction</span>
-            <div class="about__container container grid">
-                <img src="assets/img/about.jpg" alt="" class="about__img">
-                <div class="about__data">
-                <p class="about__description">At the moment i'm studying at the Ufa State Petroleum Technical University (USPTU), 
-                    specializing in technosphere safety and engineering economics. 
-                    <br>I do not have work experience. 
-                    <br>My side capabilities: multitasking, perseverance and a great desire to master new technologies.
+
+            <!---------home info 1---------->
+            <div class="home__info">
+                <div>
+                    <h3 class="home__info-title">
+                        BIOGRAPHY
+                    </h3>
+
+                    <p class="home__info-description">
+                        Studying at rsschool in order to become a highly qualified frontend developer in the future.<br> 
+                        Based in Russian Federation.
                     </p>
-                <div class="about__info">
-                    <div>
-                        <span class="about__info-title">00+</span>
-                        <span class="about__info-name"> Years <br> experience</span>
-                    </div>
-
-                    <div>
-                        <span class="about__info-title">01+</span>
-                        <span class="about__info-name"> Completed <br> projects</span>
-                    </div>
-
-                    <div>
-                        <span class="about__info-title">00+</span>
-                        <span class="about__info-name"> Companies <br> worked</span>
-                    </div>
                 </div>
-                <div class="about__buttons">
-                    <a href="assets/pdf/cv.pdf" class="button button--flex">
-                        Download CV<i class="uil uil-import button__icon"></i>
-                    </a>
+
+                <div>
+                    <h3 class="home__info-title">
+                        CONTACT
+                    </h3>
+
+                    <p class="home__info-description">
+                        Ufa, Russian Federaion <br>
+                        blissdery@gmail.com <br>
+                        +7(917)795-86-11 <br>
+                    </p>
                 </div>
+
+                <div>
+                    <h3 class="home__info-title">
+                        SERVICES
+                    </h3>
+
+                    <p class="home__info-description">
+                        Frontend developer <br>
+                        UI/UX Design <br>
+                    </p> 
+                </div>
+
+            </div>
+
+            <!---------home info 2---------->
+            <div class="home__info">
+
+                <div>
+                    <h3 class="home__info-title">
+                        YEARS OF EXPERIENCE
+                    </h3>
+
+                    <p class="home__info-number">
+                        00+
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="home__info-title">
+                        COMPLETED PROJECTS
+                    </h3>
+
+                    <p class="home__info-number">
+                        01+
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="home__info-title">
+                        COMPANIES WORKED
+                    </h3>
+
+                    <p class="home__info-number">
+                        00+
+                    </p>
                 </div>
             </div>
+        </div>
         </section>
-        <!--skills-->
+
+        <!---------skills--------->
         <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
-            <div class="skills__container container grid section__border">
-                <!--skills 1-->
-                <div class="skills__content">
-                    <h3 class="skills__title">
-                        <i class="uil uil-brackets-curly"></i>Frontend Developer
-                    </h3>
-                    <div class="skills__info">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
+        <div class="skills__container container grid section__border">
+            <!--skills 1-->
+            <div class="skills__content">
+                <h3 class="skills__title">
+                    <i class="uil uil-brackets-curly"></i>Frontend Developer
+                </h3>
+                <div class="skills__info">
 
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="assets/img/html-1.svg" alt="skills image">
-                            </div>
-                            <h3 class="skills__name">HTML</h3>
+                    <div class="skills__data">
+                        <div class="skills__blob">
+                            <img src="assets/img/html-1.svg" alt="skills image">
                         </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="assets/img/css-3.svg" alt="skills image">
-                            </div>
-                            <h3 class="skills__name">CSS</h3>
-                        </div>
-
-                        
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="assets/img/javascript-1.svg" alt="skills image">
-                            </div>
-                            <h3 class="skills__name">JavaScript</h3>
-                        </div>
-
-                        
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="assets/img/react-2.svg" alt="skills image">
-                            </div>
-                            <h3 class="skills__name">React</h3>
-                        </div>
-
+                        <h3 class="skills__name">HTML</h3>
+                        <span class="skills__subtitle">Beginner</span>
                     </div>
+                    
+                    <div class="skills__data">
+                        <div class="skills__blob">
+                            <img src="assets/img/css-3.svg" alt="skills image">
+                        </div>
+                        <h3 class="skills__name">CSS</h3>
+                        <span class="skills__subtitle">Beginner</span>
+                    </div>
+
+                    
+                    <div class="skills__data">
+                        <div class="skills__blob">
+                            <img src="assets/img/javascript-1.svg" alt="skills image">
+                        </div>
+                        <h3 class="skills__name">JavaScript</h3>
+                        <span class="skills__subtitle">Beginner</span>
+                    </div>
+
+                    
+                    <div class="skills__data">
+                        <div class="skills__blob">
+                            <img src="assets/img/react-2.svg" alt="skills image">
+                        </div>
+                        <h3 class="skills__name">React</h3>
+                        <span class="skills__subtitle">Beginner</span>
+                    </div>
+
                 </div>
-                <!--skills 2-->
-                <div class="skills__content">
-                    <h3 class="skills__title">
-                        <i class="uil uil-server-connection"></i> Backend Developer
-                    </h3>
-                    <div class="skills__info">
+            </div>
+            <!--skills 2-->
+            <div class="skills__content">
+                <h3 class="skills__title">
+                    <i class="uil uil-server-connection"></i> Backend Developer
+                </h3>
+                <div class="skills__info">
 
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="assets/img/python-5.svg" alt="skills image">
-                            </div>
-                            <h3 class="skills__name">Python</h3>
+                    <div class="skills__data">
+                        <div class="skills__blob">
+                            <img src="assets/img/python-5.svg" alt="skills image">
                         </div>
+                        <h3 class="skills__name">Python</h3>
+                        <span class="skills__subtitle">Beginner</span>
+                    </div>
 
 
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="assets/img/php-1.svg" alt="skills image">
-                            </div>
-                            <h3 class="skills__name">PHP</h3>
+                    <div class="skills__data">
+                        <div class="skills__blob">
+                            <img src="assets/img/php-1.svg" alt="skills image">
                         </div>
+                        <h3 class="skills__name">PHP</h3>
+                        <span class="skills__subtitle">Beginner</span>
+                    </div>
 
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="assets/img/nodejs-2.svg" alt="skills image">
-                            </div>
-                            <h3 class="skills__name">NodeJS</h3>
+                    <div class="skills__data">
+                        <div class="skills__blob">
+                            <img src="assets/img/nodejs-2.svg" alt="skills image">
                         </div>
+                        <h3 class="skills__name">NodeJS</h3>
+                        <span class="skills__subtitle">Beginner</span>
+                    </div>
 
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="assets/img/git-icon.svg" alt="skills image">
-                            </div>
-                            <h3 class="skills__name">GIT</h3>
+                    <div class="skills__data">
+                        <div class="skills__blob">
+                            <img src="assets/img/git-icon.svg" alt="skills image">
                         </div>
+                        <h3 class="skills__name">GIT</h3>
+                        <span class="skills__subtitle">Beginner</span>
                     </div>
                 </div>
             </div>
+        </div>
         </section>
-        <!--qualification-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+        <!---------qualification--------->
+        <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">Experience & education</span>
 
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
+        <div class="qualification__container container grid section__border">
+            <!---------qualification 1--------->
+            <div class="qualification__content">
+            <div class="qualification__content">
+                <h3 class="qualification__title">
+                    <i class="uil uil-graduation-cap"></i> Education
+                </h3>
 
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
-                    </div>
-                </div>
-                <div class="qualification__sections">
-                    <!--qualification content 1-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--qualification 1-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Bachelor in technosphere safety</h3>
-                                <span class="qualification__subtitle">Ufa State Petroleum Technological University</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2017 - 2021
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <!--qualification 2-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">Information security curator</h3>
-                                <span class="qualification__subtitle">Ufa State Petroleum Technological University</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    March 2022 - June 2022
-                                </div>
-                            </div>
-                        </div>
-                        <!--qualification 3-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">Python developer</h3>
-                                <span class="qualification__subtitle">Ufa State Petroleum Technological University</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Sep 2022 - Dec 2022
-                                </div>
-                            </div>
-                        </div>
-                        <!--qualification 4-->
-                        <div class="qualification__data">
-                            <div></div>
-                            
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">HTML & CSS basics</h3>
-                                <span class="qualification__subtitle">Ufa State Petroleum Technological University</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Sep 2022 - Dec 2022
-                                </div>
-                            </div>
-                        </div>
-                            <!--qualification 5-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Master in technosphere safety</h3>
-                                    <span class="qualification__subtitle">Ufa State Petroleum Technological University</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021-2023
-                                    </div>
-                                </div>
-    
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                            <!--qualification 6-->
-                            <div class="qualification__data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <!--<span class="qualification__line"></span>-->
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title">Master in engineering economics</h3>
-                                    <span class="qualification__subtitle">Ufa State Petroleum Technological University</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - 2023
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <!--qualification content 2-->
-                    <div class="qualification__content" data-content id="work">
-                        <!--qualification 1-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Student</h3>
-                                <span class="qualification__subtitle">Ufa State Petroleum Technological University</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2022
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--services-->
-        <section class="services section" id="services">
-            <h2 class="section__title">Services</h2>
-            <span class="section__subtitle">What i offer</span>
-            <div class="services__container container grid">
-                <!--services 1--> 
-                <div class="services__content">
+                <div class="qualification__info">
                     <div>
-                        <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">Frontend <br> Developer</h3>
+                        <h3 class="qualification__name">
+                            Bachelor in technosphere safety
+                        </h3>
+                        <span class="qualification__country">Ufa State Petroleum Technological University</span>
+                        <span class="qualification__year">2017 - 2021</span>
                     </div>
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Code example (codewars):
-                                        <br>
-                                    <br>var countBits = function(n) {
-                                    <br>// make an array with the bit result
-                                    <br>const base = (n).toString(2).split('');
-                                    <br>// make a sum with the array and make the index a number
-                                    <br>const result = base.reduce((sum, num) => sum + Number(num), 0);
-                                    <br>return result;
-                                    <br>};
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
+
+                    <div>
+                        <h3 class="qualification__name">
+                            Information security curator
+                        </h3>
+                        <span class="qualification__country">Ufa State Petroleum Technological University</span>
+                        <span class="qualification__year">March 2022 - June 2022</span>
+                    </div>
+
+                    <div>
+                        <h3 class="qualification__name">
+                            Python developer
+                        </h3>
+                        <span class="qualification__country">Ufa State Petroleum Technological University</span>
+                        <span class="qualification__year">Sep 2022 - Dec 2022</span>
+                    </div>
+
+                    <div>
+                        <h3 class="qualification__name">
+                            HTML & CSS basics
+                        </h3>
+                        <span class="qualification__country">Ufa State Petroleum Technological University</span>
+                        <span class="qualification__year">Sep 2022 - Dec 2022</span>
+                    </div>
+
+                    <div>
+                        <h3 class="qualification__name">
+                            Master in technosphere safety
+                        </h3>
+                        <span class="qualification__country">Ufa State Petroleum Technological University</span>
+                        <span class="qualification__year">2021 - 2023</span>
+                    </div>
+                    
+                    <div>
+                        <h3 class="qualification__name">
+                            Master in engineering economics
+                        </h3>
+                        <span class="qualification__country">Ufa State Petroleum Technological University</span>
+                        <span class="qualification__year">2021 - 2023</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!---------qualification 2--------->
+            <div class="qualification__content">
+                <h3 class="qualification__title">
+                    <i class="uil uil-briefcase-alt"></i> Work
+                </h3>
+
+                <div class="qualification__info">
+                    <div>
+                        <h3 class="qualification__name">
+                            Student
+                        </h3>
+                        <span class="qualification__country">Ufa State Petroleum Technological University</span>
+                        <span class="qualification__year">2021 - </span>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
         </section>
-        <!--portfolio-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
-            
+        <!---------services--------->
+        <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What i offer</span>
+        <div class="services__container container grid section__border">
+            <!--services 1--> 
+            <div class="services__card">
+                <div>
+                    <i class="uil uil-web-grid services__icon"></i>
+                    <h2 class="services__title">
+                        Frontend <br> Developer
+                    </h2>
+                    <p class="services__description">
+                        Service that provides the best quality and at the request of the client, with professional work and customer support
+                    </p>
+                    <div class="services__border"></div>
+                </div>
+            </div>
+
+            <!--services 1--> 
+            <div class="services__card">
+                <div>
+                    <i class="uil uil-palette"></i>
+                    <h2 class="services__title">
+                        UI/UX <br> Design
+                    </h2>
+                    <p class="services__description">
+                        Service that provides the best quality and at the request of the client, with professional work and customer support
+                    </p>
+                    <div class="services__border"></div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!---------projects--------->
+        <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
             <div class="container section__border">
-                <div class="portfolio__container swiper">
+                <div class="projects__container swiper">
                     <div class="swiper-wrapper">
                         <!--project 1-->
-                        <div class="portfolio__content swiper-slide">
-                            <img src="assets/img/portfolio.jpg" alt="portfolio image" class="portfolio__img">
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project1.jpg" alt="projects image" class="projects__img">
                             <div>
-                                <span class="portfolio__subtitle">Website</span>
-                                <h1 class="portfolio__title">Premium car rental</h1>
-
-                                <a href="https://jbagration.github.io/cars-hw/" class="portfolio__button">
+                                <span class="projects__subtitle">Website</span>
+                                <h1 class="projects__title">Premium car rental</h1>
+                                <a href="https://jbagration.github.io/cars-hw/" class="projects__button">
                                     View demo <i class="uil uil-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                         <!--project 2-->
-                        <div class="portfolio__content swiper-slide">
-                            <img src="assets/img/portfolio2.jpg" alt="portfolio image" class="portfolio__img">
+                        <div class="projects__content swiper-slide">
+                            <img src="assets/img/project2.jpg" alt="projects image" class="projects__img">
+                            
                             <div>
-                                <span class="portfolio__subtitle">Website</span>
-                                <h1 class="portfolio__title">ECommerce Store</h1>
-
-                                <a href="https://jbagration.github.io/cars-hw/" class="portfolio__button">
+                                <span class="projects__subtitle">Website</span>
+                                <h1 class="projects__title">ECommerce Store</h1>
+                                <a href="https://jbagration.github.io/cars-hw/" class="projects__button">
                                     View demo <i class="uil uil-arrow-right"></i>
                                 </a>
                             </div>
@@ -471,103 +443,108 @@
                 </div>
             </div>
         </section>
-        <!--testimonial-->
         <!--contact me-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact me</h2>
-            <span class="section__subtitle">Get in touch</span>
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone-alt contact__icon"></i> 
-                        <div>
-                            <h3 class="contact__title">Call me</h3>
-                            <span class="contact__subtitle">+7(917)79-58-611</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-envelope-alt contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">blissdery@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Ufa, Russian Federation</span>
-                        </div>
-                    </div>
-                </div>
-                <form action="" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="text__message" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
+        <h2 class="section__title">Contact me</h2>
+        <span class="section__subtitle">Get in touch</span>
+        <div class="contact__container container grid section__border">
+            <div class="contact__content">
+                <h3 class="contact__title">
+                    <i class="uil uil-chat"></i>Talk to me
 
-                    <div>
-                        <a href="#" class="button button--flex">
-                            Send message
-                            <i class="uil uil-message button__icon"></i>
+                </h3>
+                <div class="contact__info">
+                    <div class="contact__data">
+                        <span class="contact__data-title">Email</span>
+                        <span class="contact__data-info">blissdery@gmail.com</span>
+                    </div>
+                    <div class="contact__data">
+                        <span class="contact__data-title">Whatsapp</span>
+                        <span class="contact__data-info">+79177958611</span>
+
+                        <a href="https://api.whatsapp.com/send?phone=79177958611&text=Hello, more Information!" target='_blank' class="contact__button">
+                            Write me <i class="uil uil-arrow-right"></i>
                         </a>
                     </div>
-                </form>
-            </div>
-        </section>
-    </main>
-    <!--footer-->
-    <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h2 class="footer__title">Yulia</h2>
-                    <span class="footer__subtitle">Frontend developer</span>
-                </div>           
-                <ul class="footer__links">
-                    <li>
-                        <a href="#services" class="footer__link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>                    <li>
-                        <a href="#contactme" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-                <div class="footer__socials">
-                    <a href="https://vk.com/jsekhmet" target='black' class="footer__social">
-                        <i class="uil uil-vk-alt"></i>
-                    </a>
-                    <a href="https://discordapp.com/users/882559059386064906/" target='black' class="footer__social">
-                        <i class="uil uil-discord"></i>
-                    </a>
                 </div>
             </div>
-            <p class="footer__copy">&#169; Blissdery. All right reserved.</p>
-        </div>
-    </footer>
-    <!--scroll top-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
-    <!--swiper js-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <!--main js-->
-    <script src="assets/js/main.js"></script>
-    
-</body>
+
+            <div class="contact__content">
+                <h3 class="contact__title">
+                    <i class="uil uil-share"></i>Write me your project
+                </h3>
+                <form action="" class="contact__form" id="contact-form">
+                    <div class="contact__form-div">
+                        <label class="contact__form-div">Name</label>
+                        <input type="text" name='user_name' required placeholder="Write your name" class="contact__form-input" id="contact-name">
+                    </div>
+
+                    <div class="contact__form-div">
+                        <label class="contact__form-div">Mail</label>
+                        <input type="email" name='user_email' required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                    </div>
+
+                    <div class="contact__form-div contact__form-area">
+                        <label class="contact__form-div">Project</label>
+                        <textarea name="user_project" placeholder="Write your project" id="contact-project" class="contact__form-input"></textarea>
+                    </div>
+
+                    <p class="contact__message" id="contact-message">Message</p>
+
+                    <button type="submit" class="contact__button">
+                        Submit <i class="uil uil-arrow-up-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>    
+        </section>
+        </main>
+        <!----------------------------footer------------------------>
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Yulia</h1>
+                <p>Frontend developer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a> 
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a> 
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a> 
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+
+                    <a href="https://vk.com/jsekhmet" target="_blank" class="footer__social-link">
+                        <i class="uil uil-vk-alt"></i>
+                    </a>
+
+                    <a href="https://discordapp.com/users/882559059386064906/" target="_blank" class="footer__social-link">
+                        <i class="uil uil-discord"></i>
+                    </a>
+                </ul>
+                <span class="footer__copy">
+                    &#169; Blissdery. All rights reserved.
+                </span>
+            </div>
+        </footer>
+        <!-------------scroll up------------->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up"></i>
+        </a>
+        <!--scrollreveal-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <!---------main js--------->
+        <script src="assets/js/main.js"></script>
+        <!--email js-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!--swiper js-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+    </body>
 </html>
