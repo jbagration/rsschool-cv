@@ -26,43 +26,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/*email js*/
-const contactForm = document.getElementById('contact-form'),
-      contactName = document.getElementById('contact-name'),
-      contactEmail = document.getElementById('contact-email'),
-      contactProject = document.getElementById('contact-project'),
-      contactMessage = document.getElementById('contact-message')
-
-const sendEmail = (e) =>{
-    e.preventDefault()
-    //check if the field has a value
-    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
-        //add and remove color
-        contactMessage.classList.remove('color-blue')
-        contactMessage.classList.add('color-red')
-
-        //show message
-        contactMessage.textContent = 'Write all the input fields!'
-    }else{
-        //serviceID - templateID - #form - publicKey
-        emailjs.sendForm('service_cesuk8y','template_cmzpim1','#contact-form','vBORxlf98MDM8b1ot')
-            .then(() =>{
-                contactMessage.classList.add('color-blue')
-                contactMessage.textContent = 'Message sent!'
-            setTimeout(() =>{
-                contactMessage.textContent = ''
-            }, 5000)
-            }, (error) =>{
-                alert('Oops! Something has failed...', error)
-            })
-        //to clear the input field
-        contactName.value = ''
-        contactEmail.value = ''
-        contactProject.value = ''
-    }
-}
-contactForm.addEventListener('submit', sendEmail)
-
 
 /*scroll sections active link*/
 const sections = document.querySelectorAll('section[id]')
@@ -143,8 +106,55 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__data, .projects__container, .footer__container`)
-sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100})
+sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 50})
 sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, {origin: 'left'})
 sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {origin: 'right'})
-sr.reveal(`.qualification__content, .services__card`, {interval: 100})
+sr.reveal(`.qualification__content, .services__card`, {interval: 50})
   
+/*swiper js*/
+$(function() {
+
+    $('.swiper-wrapper').slick({
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+    });
+});
+
+/*email js*/
+const contactForm = document.getElementById('contact-form'),
+      contactName = document.getElementById('contact-name'),
+      contactEmail = document.getElementById('contact-email'),
+      contactProject = document.getElementById('contact-project'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+    //check if the field has a value
+    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
+        //add and remove color
+        contactMessage.classList.remove('color-blue')
+        contactMessage.classList.add('color-red')
+
+        //show message
+        contactMessage.textContent = 'Write all the input fields!'
+    }else{
+        //serviceID - templateID - #form - publicKey
+        emailjs.sendForm('service_cesuk8y','template_cmzpim1','#contact-form','vBORxlf98MDM8b1ot')
+            .then(() =>{
+                contactMessage.classList.add('color-blue')
+                contactMessage.textContent = 'Message sent!'
+            setTimeout(() =>{
+                contactMessage.textContent = ''
+            }, 5000)
+            }, (error) =>{
+                alert('Oops! Something has failed...', error)
+            })
+        //to clear the input field
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProject.value = ''
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
