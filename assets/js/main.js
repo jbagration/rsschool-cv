@@ -100,7 +100,7 @@ window.addEventListener('scroll', scrollHeader)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
+    duration: 1250,
     delay: 400,
     //reset:true /*animation repeat*/
 })
@@ -115,11 +115,38 @@ sr.reveal(`.qualification__content, .services__card`, {interval: 50})
 $(function() {
 
     $('.swiper-wrapper').slick({
+        autoplay:true,
+        autoplaySpeed: 4000,
+        dots: false,
         arrows: false,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-    });
+        centerMode: true,
+        centerPadding: '10px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              dots: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              dots: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+          
+
 });
 
 /*email js*/

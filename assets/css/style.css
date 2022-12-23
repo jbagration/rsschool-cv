@@ -573,7 +573,7 @@ body.dark-theme{
 
 /*projects*/
 .projects__container{
-    overflow: initial;
+    overflow: hidden;
 }
 
 .projects__content{
@@ -582,7 +582,7 @@ body.dark-theme{
 }
 
 .projects__img{
-    width: 250px;
+    width: 350px;
     border-radius: .75rem;
     margin-bottom: 1.25rem;
 }
