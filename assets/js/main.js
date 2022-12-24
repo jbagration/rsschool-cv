@@ -116,7 +116,7 @@ $(function() {
 
     $('.swiper-wrapper').slick({
         autoplay:true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         dots: false,
         arrows: false,
         centerMode: true,
