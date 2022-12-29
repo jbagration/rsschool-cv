@@ -685,7 +685,6 @@ body.dark-theme{
 
 .contact__data-title{
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
 }
 
 .contact__data-info{
