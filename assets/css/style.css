@@ -618,6 +618,37 @@ body.dark-theme{
     transform: translateX(.25rem);
 }
 
+
+/*swiper class*/
+.projects__container .swiper-button-prev::after,
+.projects__container .swiper-button-next::after{
+    content: '';
+}
+
+.projects__container .swiper-button-prev,
+.projects__container .swiper-button-next{
+    width: initial;
+    height: initial;
+    margin: initial;
+    font-size: 2.5rem;
+    color: var(--title-color);
+}
+
+.projects__container .swiper-button-prev{
+    left: -1rem;
+    top: 4.5rem;
+}
+
+.projects__container .swiper-button-next{
+    right: -1rem;
+    top: 4.5rem;
+}
+
+.projects__container .swiper-slide{
+    margin-bottom: 4.5rem;
+}
+
+
 /*contact me*/
 .contact__container{
     row-gap: 3.5rem;
@@ -654,7 +685,6 @@ body.dark-theme{
 
 .contact__data-title{
     font-size: var(--small-font-size);
-    color: var(--text-color-light);
 }
 
 .contact__data-info{
