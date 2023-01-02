@@ -1105,33 +1105,6 @@ body.dark-theme{
 }
 
 /*for medium devices*/
-@media screen and (max-width: 576px){
-    .nav,
-    .nav__menu{
-        width: 380px;
-    }
-    .nav{
-        margin: 0 auto;
-    }
-
-    .skills__container{
-        justify-content: center;
-    }
-
-    .projects__container{
-        width: 400px;
-    }
-
-    .projects__container{
-        overflow: hidden;
-    }
-    .projects__container .swiper-button-prev{
-        left: 1rem;
-    }
-    .projects__container .swiper-button-next{
-        right: 1rem;
-    }
-}
 @media screen and (min-width: 767px){
     .home__container{
         grid-template-columns: 1fr 2fr 1fr;
@@ -1153,7 +1126,8 @@ body.dark-theme{
     .skills__container,
     .qualification__container,
     .services__container,
-    .contact__container{
+    .contact__container,
+    .projects__container{
         grid-template-columns: repeat(2, max-content);
     }
 
@@ -1176,6 +1150,24 @@ body.dark-theme{
     }
 }
 
+@media screen and (max-width: 576px){
+    .nav,
+    .nav__menu{
+        width: 380px;
+    }
+    .nav{
+        margin: 0 auto;
+    }
+
+    .skills__container{
+        justify-content: center;
+    }
+
+    .projects__container{
+        overflow: hidden;
+    }
+}
+
 /*for small devices*/
 @media screen and (max-width: 340px){
     .container{
@@ -1191,10 +1183,5 @@ body.dark-theme{
 
     .skills__info{
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .projects__img{
-        width: 200px;
-        justify-self: center
     }
 }
