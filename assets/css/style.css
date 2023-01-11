@@ -633,7 +633,6 @@ body.dark-theme{
     cursor: pointer;
 }
 
-
 .slick-arrow:hover {
     background: hsl(var(--hue-color), 69%, 61%);
     box-shadow: 0 0 10px hsl(var(--hue-color), 69%, 61%),
@@ -663,7 +662,7 @@ body.dark-theme{
 .slick-arrow::after {
     content: "";
     position: absolute;
-    background: var(--container-color);
+    background: var(--body-color);
     inset: 2px;
     transition: 0.5s;
 }
