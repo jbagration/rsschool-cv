@@ -137,6 +137,10 @@ body.dark-theme{
     border-bottom: 1px solid hsl(207, 4%, 32%);
 }
 
+.dark-theme .slick-arrow{
+    border: 1px solid hsl(207, 4%, 32%)
+}
+
 .dark-theme::-webkit-scrollbar{
     background-color: hsl(207, 4%, 15%);
 }
@@ -617,17 +621,18 @@ body.dark-theme{
     justify-content: center;
     align-items: center;
     background: var(--container-color);
+    border: 0px;
     margin: 40px;
     transition: 1s;
     overflow: hidden;
     text-decoration: none;
-    z-index: 1;
-    color: #fff;
+    color: var(--title-color);
     opacity: 0.8;
-    font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     transition: 0.5s;
+    cursor: pointer;
 }
+
 
 .slick-arrow:hover {
     background: hsl(var(--hue-color), 69%, 61%);
@@ -636,13 +641,13 @@ body.dark-theme{
                 0 0 20px hsl(var(--hue-color), 69%, 61%),
                 0 0 40px hsl(var(--hue-color), 69%, 61%);
     opacity: 1;
-    color: #fff;
+    color: var(--container-color);
 }
 
 .slick-arrow::before {
     content: "";
     position: absolute;
-    width: 0px;
+    width: 20px;
     height: 400%;
     background: hsl(var(--hue-color), 69%, 61%);
     transition: 1s;
@@ -657,15 +662,16 @@ body.dark-theme{
 
 .slick-arrow::after {
     content: "";
+    position: absolute;
     background: var(--container-color);
-    inset: 4px;
+    inset: 2px;
     transition: 0.5s;
 }
 
 .slick-arrow:hover::after {
     background: hsl(var(--hue-color), 69%, 61%);
+    opacity: 0;
 }
-
 
 @keyframes animate {
     0% {
