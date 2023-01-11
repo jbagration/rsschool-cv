@@ -118,8 +118,9 @@ $(function() {
         autoplay:true,
         autoplaySpeed: 3000,
         dots: false,
-        arrows: false,
+        arrows: true,
         centerMode: true,
+        Infinity: true,
         centerPadding: '10px',
         slidesToShow: 3,
         responsive: [
