@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 /*menu show and hidden*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -186,3 +188,4 @@ const sendEmail = (e) =>{
     }
 }
 contactForm.addEventListener('submit', sendEmail)
+});
